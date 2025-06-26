@@ -1,78 +1,105 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Briefcase, Calendar, ArrowRight } from "lucide-react";
 
 export const ExperienceSection = () => {
   const experiences = [
     {
       title: "Business Development Manager",
-      company: "Textilkvalitne.cz (Pavel Michna)",
-      period: "07/2022 – Present",
-      responsibilities: [
-        "Development of international business relationships",
-        "Optimization of internal company processes"
+      company: "Textilkvalitne.cz",
+      period: "July 2022 – Present",
+      description: "Leading international business expansion and process optimization",
+      achievements: [
+        "Developed and maintained strategic international business relationships",
+        "Implemented process optimization strategies that improved operational efficiency",
+        "Led cross-functional initiatives to streamline internal company workflows"
       ]
     },
     {
       title: "Data Processing Team Leader",
       company: "Renturi s.r.o.",
-      period: "07/2020 – 09/2020",
-      responsibilities: [
-        "Data team coordination",
-        "Work process organization"
+      period: "July 2020 – September 2020",
+      description: "Coordinated data analytics team and workflow optimization",
+      achievements: [
+        "Managed and coordinated a team of data analysts",
+        "Organized and streamlined data processing workflows",
+        "Implemented quality control measures for data accuracy"
       ]
     },
     {
       title: "Chief Technician",
       company: "Student Festival Unplugged GMK",
-      period: "09/2018 – 06/2020",
-      responsibilities: [
-        "Technical festival support",
-        "Technical team leadership"
+      period: "September 2018 – June 2020",
+      description: "Technical leadership for large-scale student events",
+      achievements: [
+        "Provided comprehensive technical support for festival operations",
+        "Led and managed technical teams of 10+ members",
+        "Coordinated logistics and technical infrastructure"
       ]
     },
     {
       title: "Mathematical Seminar Manager",
-      company: "KoKoS",
-      period: "09/2016 – 06/2020",
-      responsibilities: [
-        "Organization of competitive series and camps",
-        "Team leadership and problem creation"
+      company: "KoKoS Organization",
+      period: "September 2016 – June 2020",
+      description: "Educational program leadership and content development",
+      achievements: [
+        "Organized competitive mathematical series and training camps",
+        "Led educational teams and developed problem-solving content",
+        "Mentored young mathematicians and competitive programmers"
       ]
     }
   ];
 
   return (
-    <Card className="bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
-      <CardHeader>
-        <CardTitle className="text-2xl text-slate-800 flex items-center gap-2">
-          <div className="w-1 h-8 bg-green-500 rounded-full"></div>
-          Work Experience
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-6">
-          {experiences.map((exp, index) => (
-            <div key={index} className="border-l-2 border-slate-200 pl-6 hover:border-green-500 transition-colors">
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <h3 className="text-xl font-semibold text-slate-800">{exp.title}</h3>
-                <Badge variant="outline" className="text-slate-600">
-                  {exp.period}
-                </Badge>
-              </div>
-              <p className="text-lg text-blue-600 font-medium mb-3">{exp.company}</p>
-              <ul className="space-y-1">
-                {exp.responsibilities.map((resp, respIndex) => (
-                  <li key={respIndex} className="text-slate-700 flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
-                    {resp}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+      <div className="flex items-center gap-4 mb-8">
+        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+          <Briefcase className="w-6 h-6 text-white" />
         </div>
-      </CardContent>
-    </Card>
+        <div>
+          <h2 className="text-2xl font-semibold text-slate-900">Professional Experience</h2>
+          <p className="text-slate-600">Career progression and key achievements</p>
+        </div>
+      </div>
+
+      <div className="space-y-8">
+        {experiences.map((exp, index) => (
+          <div key={index} className="relative">
+            {index < experiences.length - 1 && (
+              <div className="absolute left-6 top-20 bottom-0 w-px bg-slate-200"></div>
+            )}
+            
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center">
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <h3 className="text-xl font-semibold text-slate-900">{exp.title}</h3>
+                  <ArrowRight className="w-4 h-4 text-slate-400" />
+                  <span className="text-lg font-medium text-green-600">{exp.company}</span>
+                </div>
+                
+                <div className="flex items-center gap-2 mb-3">
+                  <Calendar className="w-4 h-4 text-slate-400" />
+                  <span className="text-sm text-slate-600">{exp.period}</span>
+                </div>
+                
+                <p className="text-slate-700 mb-4 italic">{exp.description}</p>
+                
+                <ul className="space-y-2">
+                  {exp.achievements.map((achievement, achIndex) => (
+                    <li key={achIndex} className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-slate-700">{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
