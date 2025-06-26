@@ -36,7 +36,7 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 sticky top-6">
+    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-slate-900 mb-2">Core Competencies</h2>
         <p className="text-sm text-slate-600">Technical skills and expertise</p>

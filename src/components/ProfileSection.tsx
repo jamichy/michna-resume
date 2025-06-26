@@ -1,10 +1,9 @@
 
-
 export const ProfileSection = () => {
   return (
     <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
       <div className="flex items-center gap-6 mb-6">
-        <div className="w-24 h-24 rounded-xl overflow-hidden border-2 border-blue-100 flex-shrink-0">
+        <div className="w-32 h-32 rounded-xl overflow-hidden border-2 border-blue-100 flex-shrink-0">
           <img 
             src="/lovable-uploads/2d89ab98-bf9d-46d6-bfcb-20839389678e.png" 
             alt="Jakub Michna" 
@@ -45,4 +44,3 @@ export const ProfileSection = () => {
     </section>
   );
 };
-
