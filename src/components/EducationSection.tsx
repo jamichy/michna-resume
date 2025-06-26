@@ -1,25 +1,27 @@
 
-import { GraduationCap, BookOpen, Award } from "lucide-react";
+import { GraduationCap, BookOpen, Award, ExternalLink } from "lucide-react";
 
 export const EducationSection = () => {
   const education = [
     {
       degree: "Master's Degree (Ing.)",
+      field: "Mathematical Engineering",
+      school: "Czech Technical University in Prague",
+      faculty: "Faculty of Nuclear Sciences and Physical Engineering",
+      period: "2023–2025",
+      thesis: "Solution of the phase problem in crystallography by machine learning methods",
+      supervisor: "Ing. Pavel Strachota, Ph.D.",
+      thesisLink: "https://dspace.cvut.cz/handle/10467/123414"
+    },
+    {
+      degree: "Bachelor's Degree (Bc.)",
       field: "Mathematical Engineering – Mathematical Modeling",
       school: "Czech Technical University in Prague",
       faculty: "Faculty of Nuclear Sciences and Physical Engineering",
       period: "2020–2023",
-      thesis: "Solution of the phase problem in crystallography by machine learning methods",
-      supervisor: "Ing. Pavel Strachota, Ph.D."
-    },
-    {
-      degree: "Bachelor's Degree (Bc.)",
-      field: "Mathematical Engineering",
-      school: "Czech Technical University in Prague",
-      faculty: "Faculty of Nuclear Sciences and Physical Engineering",
-      period: "2020–2023",
       thesis: "Automatic stock exchange trading based on fundamental data and reinforcement learning algorithms",
-      supervisor: "Ing. Pavel Strachota, Ph.D."
+      supervisor: "Ing. Pavel Strachota, Ph.D.",
+      thesisLink: "https://dspace.cvut.cz/handle/10467/111459"
     },
     {
       degree: "High School Diploma",
@@ -74,10 +76,25 @@ export const EducationSection = () => {
             {edu.thesis && (
               <div className="bg-slate-50 rounded-lg p-4 mt-4">
                 <p className="text-sm font-medium text-slate-700 mb-1">Thesis:</p>
-                <p className="text-sm text-slate-600 italic mb-2">{edu.thesis}</p>
-                {edu.supervisor && (
-                  <p className="text-xs text-slate-500">Supervisor: {edu.supervisor}</p>
-                )}
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <p className="text-sm text-slate-600 italic mb-2">{edu.thesis}</p>
+                    {edu.supervisor && (
+                      <p className="text-xs text-slate-500">Supervisor: {edu.supervisor}</p>
+                    )}
+                  </div>
+                  {edu.thesisLink && (
+                    <a
+                      href={edu.thesisLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-purple-600 hover:text-purple-700 text-xs font-medium transition-colors flex-shrink-0"
+                    >
+                      View Thesis
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
               </div>
             )}
           </div>
