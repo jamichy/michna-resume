@@ -11,7 +11,7 @@ export const HeroSection = () => {
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> Jakub Michna</span>
           </h1>
           <p className="text-xl lg:text-2xl text-blue-200 mb-8 font-light">
-            Mathematical Engineering × Technological Innovation × Business Development
+            Mathematical Engineering
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm uppercase tracking-wide text-slate-300 mb-8">
             <span className="px-3 py-1 bg-blue-500/20 rounded-full">Machine Learning</span>
