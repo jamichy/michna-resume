@@ -1,4 +1,5 @@
 
+
 export const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-20">
@@ -26,3 +27,4 @@ export const HeroSection = () => {
     </section>
   );
 };
+
