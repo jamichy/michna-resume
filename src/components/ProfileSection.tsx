@@ -1,45 +1,87 @@
 
+import { User, MapPin, Calendar, Briefcase } from "lucide-react";
+
 export const ProfileSection = () => {
   return (
     <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
-      <div className="flex items-center gap-6 mb-6">
-        <div className="w-32 h-32 rounded-xl overflow-hidden border-2 border-blue-100 flex-shrink-0">
-          <img 
-            src="/lovable-uploads/2d89ab98-bf9d-46d6-bfcb-20839389678e.png" 
-            alt="Jakub Michna" 
-            className="w-full h-full object-cover"
-          />
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Profile Image */}
+        <div className="flex-shrink-0">
+          <div className="w-[280px] h-[210px] bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src="/lovable-uploads/2d89ab98-bf9d-46d6-bfcb-20839389678e.png" 
+              alt="Jakub Michna" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        <div className="flex-1">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-1">Professional Profile</h2>
-          <p className="text-slate-600 mb-3">Who I am and what drives me</p>
-          <div className="flex flex-wrap gap-4 text-sm text-slate-500">
-            <div className="flex items-center gap-1">
-              <span>📅</span>
-              <span>Born: June 7, 2001</span>
+
+        {/* Profile Info */}
+        <div className="flex-1 space-y-6">
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                <User className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-slate-900">Professional Profile</h2>
+                <p className="text-slate-600">Mathematical Engineer & Business Developer</p>
+              </div>
             </div>
-            <div className="flex items-center gap-1">
-              <span>📍</span>
-              <span>Currently in Prague</span>
+            
+            <div className="prose text-slate-700 space-y-4">
+              <p>
+                As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, 
+                I bridge the gap between complex mathematical concepts and practical business applications.
+              </p>
+              
+              <p>
+                My experience spans from leading data processing teams to driving international business development, 
+                always with a focus on leveraging mathematical models and technological innovation to create value.
+              </p>
+              
+              <p>
+                Currently pursuing my Master's degree while simultaneously applying my expertise in real-world business 
+                environments, I bring a unique perspective that combines academic rigor with practical execution.
+              </p>
+            </div>
+          </div>
+
+          {/* Quick Info */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
+              <MapPin className="w-5 h-5 text-slate-400" />
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wide">Location</p>
+                <p className="text-sm font-medium text-slate-900">Czech Republic</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
+              <Calendar className="w-5 h-5 text-slate-400" />
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wide">Experience</p>
+                <p className="text-sm font-medium text-slate-900">4+ Years</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
+              <Briefcase className="w-5 h-5 text-slate-400" />
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wide">Current Role</p>
+                <p className="text-sm font-medium text-slate-900">Business Development Manager</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
+              <User className="w-5 h-5 text-slate-400" />
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wide">Education</p>
+                <p className="text-sm font-medium text-slate-900">Mathematical Engineering</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div className="prose prose-slate max-w-none">
-        <p className="text-lg leading-relaxed text-slate-700 mb-6">
-          As a <strong>Mathematical Engineering graduate</strong> with a passion for cutting-edge technology, 
-          I bridge the gap between complex mathematical concepts and real-world business applications. 
-          My journey spans from <em>algorithm development</em> and <em>machine learning</em> to 
-          <em>business development</em> and <em>team leadership</em>.
-        </p>
-        
-        <p className="text-base leading-relaxed text-slate-600">
-          I excel in analytical thinking and systematic problem-solving approaches, with particular 
-          expertise in modern technologies, programming, and data science. My experience ranges from 
-          developing automated trading systems using reinforcement learning to leading technical teams 
-          and optimizing business processes.
-        </p>
       </div>
     </section>
   );

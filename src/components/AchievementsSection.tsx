@@ -1,5 +1,5 @@
 
-import { Trophy, Target, Heart } from "lucide-react";
+import { Trophy, Target, Heart, Quote } from "lucide-react";
 
 export const AchievementsSection = () => {
   const achievements = [
@@ -36,11 +36,31 @@ export const AchievementsSection = () => {
   ];
 
   const interests = [
-    { name: "Programming", icon: "💻" },
-    { name: "Mathematics", icon: "📊" },
-    { name: "Economics", icon: "📈" },
-    { name: "Rock Climbing", icon: "🧗" },
-    { name: "High-altitude Hiking", icon: "🏔️" }
+    { 
+      name: "Programming", 
+      icon: "💻",
+      description: "Passionate about coding, algorithms, and software development"
+    },
+    { 
+      name: "Mathematics", 
+      icon: "📊",
+      description: "Deep interest in mathematical modeling and problem solving"
+    },
+    { 
+      name: "Economics", 
+      icon: "📈",
+      description: "Fascinated by economic theories and market analysis"
+    },
+    { 
+      name: "Rock Climbing", 
+      icon: "🧗",
+      description: "Challenging myself on vertical walls and natural rock faces"
+    },
+    { 
+      name: "High Mountain Hiking", 
+      icon: "🏔️",
+      description: "Exploring high altitude trails and mountain peaks"
+    }
   ];
 
   return (
@@ -108,13 +128,28 @@ export const AchievementsSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid gap-4 mb-8">
           {interests.map((interest, index) => (
-            <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-indigo-50 transition-colors group">
-              <span className="text-2xl group-hover:scale-110 transition-transform">{interest.icon}</span>
-              <span className="font-medium text-slate-900">{interest.name}</span>
+            <div key={index} className="flex items-start gap-4 p-4 bg-slate-50 rounded-lg hover:bg-indigo-50 transition-colors group">
+              <span className="text-3xl group-hover:scale-110 transition-transform flex-shrink-0">{interest.icon}</span>
+              <div className="flex-1">
+                <h3 className="font-semibold text-slate-900 mb-1">{interest.name}</h3>
+                <p className="text-sm text-slate-600">{interest.description}</p>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Life Philosophy Quote */}
+        <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-lg p-6 text-white">
+          <div className="flex items-center gap-3 mb-4">
+            <Quote className="w-6 h-6 text-blue-300" />
+            <h3 className="text-xl font-semibold">Life Philosophy</h3>
+          </div>
+          <blockquote className="text-lg italic leading-relaxed">
+            "I believe in combining analytical thinking with creative problem-solving, 
+            whether I'm developing algorithms, leading teams, or conquering mountain peaks."
+          </blockquote>
         </div>
       </section>
     </div>
