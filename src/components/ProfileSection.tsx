@@ -1,4 +1,3 @@
-
 import { User, MapPin, Calendar, Briefcase } from "lucide-react";
 
 export const ProfileSection = () => {
@@ -37,7 +36,7 @@ export const ProfileSection = () => {
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-slate-400" />
-                <span>Currently in Prague</span>
+                <span>As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, I bridge the gap between complex mathematical concepts and practical business applications.</span>
               </p>
             </div>
           </div>
@@ -45,11 +44,6 @@ export const ProfileSection = () => {
 
         {/* Full Description */}
         <div className="prose text-slate-700 space-y-4">
-          <p>
-            As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, 
-            I bridge the gap between complex mathematical concepts and practical business applications.
-          </p>
-          
           <p>
             My experience spans from leading data processing teams to driving international business development, 
             always with a focus on leveraging mathematical models and technological innovation to create value.
