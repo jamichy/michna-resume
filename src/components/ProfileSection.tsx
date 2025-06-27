@@ -1,3 +1,4 @@
+
 import { User, MapPin, Calendar, Briefcase } from "lucide-react";
 
 export const ProfileSection = () => {
@@ -18,7 +19,7 @@ export const ProfileSection = () => {
           </div>
 
           {/* Brief Professional Info */}
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 space-y-4 flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                 <User className="w-6 h-6 text-white" />
