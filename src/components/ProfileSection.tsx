@@ -19,25 +19,29 @@ export const ProfileSection = () => {
           </div>
 
           {/* Brief Professional Info */}
-          <div className="flex-1 space-y-4 flex flex-col justify-center">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <User className="w-6 h-6 text-white" />
+          <div className="flex-1 space-y-4 flex flex-col justify-between">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                  <User className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-semibold text-slate-900">Professional Profile</h2>
+                  <p className="text-slate-600">Who I am and what drives me</p>
+                </div>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold text-slate-900">Professional Profile</h2>
-                <p className="text-slate-600">Who I am and what drives me</p>
+              
+              <div className="space-y-2 text-slate-700">
+                <p className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-slate-400" />
+                  <span>Born: June 7, 2001</span>
+                </p>
               </div>
             </div>
             
-            <div className="space-y-2 text-slate-700">
-              <p className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-slate-400" />
-                <span>Born: June 7, 2001</span>
-              </p>
-              <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-slate-400" />
-                <span>As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, I bridge the gap between complex mathematical concepts and practical business applications.</span>
+            <div className="text-slate-700">
+              <p>
+                As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, I bridge the gap between complex mathematical concepts and practical business applications.
               </p>
             </div>
           </div>
