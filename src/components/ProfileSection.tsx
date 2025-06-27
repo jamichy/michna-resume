@@ -43,21 +43,12 @@ export const ProfileSection = () => {
               <p>
                 As a Mathematical Engineering graduate with a strong foundation in analytical thinking and problem-solving, I bridge the gap between complex mathematical concepts and practical business applications.
               </p>
+              <p className="mt-4">
+                My experience spans from leading data processing teams to driving international business development, 
+                always with a focus on leveraging mathematical models and technological innovation to create value.
+              </p>
             </div>
           </div>
-        </div>
-
-        {/* Full Description */}
-        <div className="prose text-slate-700 space-y-4">
-          <p>
-            My experience spans from leading data processing teams to driving international business development, 
-            always with a focus on leveraging mathematical models and technological innovation to create value.
-          </p>
-          
-          <p>
-            Currently pursuing my Master's degree while simultaneously applying my expertise in real-world business 
-            environments, I bring a unique perspective that combines academic rigor with practical execution.
-          </p>
         </div>
 
         {/* Quick Info Grid */}
