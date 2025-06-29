@@ -10,6 +10,12 @@ export const AchievementsSection = () => {
       type: "academic"
     },
     {
+      place: "3rd",
+      competition: "Krajské kolo Matematické olympiády, kategorie B",
+      year: "2019",
+      type: "academic"
+    },
+    {
       place: "4th",
       competition: "Internet Mathematical Olympiad (Czech Republic)",
       year: "2019/2020",

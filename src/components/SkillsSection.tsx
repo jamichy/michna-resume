@@ -7,7 +7,7 @@ export const SkillsSection = () => {
       category: "Programming",
       icon: Code,
       color: "from-blue-500 to-blue-600",
-      skills: ["Python", "C/C++", "MATLAB", "TensorFlow", "PyTorch"]
+      skills: ["Python", "C/C++", "TensorFlow", "PyTorch"]
     },
     {
       category: "AI & ML",
@@ -19,7 +19,7 @@ export const SkillsSection = () => {
       category: "Data Science",
       icon: BarChart3,
       color: "from-purple-500 to-purple-600",
-      skills: ["Statistical Analysis", "Data Visualization", "Time Series", "Pandas"]
+      skills: ["Statistical Analysis", "Data Visualization", "Pandas"]
     },
     {
       category: "Languages",
