@@ -23,8 +23,7 @@ export const ExperienceSection = () => {
       description: "Coordinated data analytics team and workflow optimization",
       achievements: [
         "Managed and coordinated a team of data analysts",
-        "Organized and streamlined data processing workflows",
-        "Implemented quality control measures for data accuracy"
+        "Organized and streamlined data processing workflows"
       ]
     },
     {
@@ -35,7 +34,6 @@ export const ExperienceSection = () => {
       description: "Technical leadership for large-scale student events",
       achievements: [
         "Provided comprehensive technical support for festival operations",
-        "Led and managed technical teams of 10+ members",
         "Coordinated logistics and technical infrastructure"
       ]
     },

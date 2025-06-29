@@ -23,7 +23,7 @@ export const AchievementsSection = () => {
     },
     {
       place: "3rd",
-      competition: "Krajské kolo Matematické olympiády, kategorie B",
+      competition: "Mathematical Olympiad – Regional Round, Category B",
       year: "2019",
       type: "academic"
     },
@@ -35,7 +35,7 @@ export const AchievementsSection = () => {
     },
     {
       place: "6th",
-      competition: "Physics Brawl International, Senior Category",
+      competition: "Náboj Physics International",
       year: "2019/2020",
       type: "international"
     }
@@ -95,11 +95,6 @@ export const AchievementsSection = () => {
                 <p className="font-medium text-slate-900 mb-1">{achievement.competition}</p>
                 <div className="flex items-center gap-2">
                   <span className="text-sm text-slate-600">{achievement.year}</span>
-                  <span className={`text-xs px-2 py-1 rounded-full ${
-                    achievement.type === 'international' ? 'bg-blue-100 text-blue-700' : 'bg-green-100 text-green-700'
-                  }`}>
-                    {achievement.type}
-                  </span>
                 </div>
               </div>
             </div>
