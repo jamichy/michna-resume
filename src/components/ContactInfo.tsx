@@ -19,7 +19,7 @@ export const ContactInfo = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Professional Profile",
-      href: "https://cz.linkedin.com"
+      href: "https://www.linkedin.com/in/jakub-michna-9760aa195/?originalSubdomain=cz"
     },
     {
       icon: MapPin,
