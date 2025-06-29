@@ -27,10 +27,12 @@ const Index = () => {
           {/* Right Column - Sidebar */}
           <div className="lg:col-span-1 space-y-8">
             <SkillsSection />
-            <ContactInfo />
           </div>
         </div>
       </div>
+
+      {/* Contact Section at the end */}
+      <ContactInfo />
     </div>
   );
 };
