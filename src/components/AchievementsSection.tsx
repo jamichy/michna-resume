@@ -10,6 +10,18 @@ export const AchievementsSection = () => {
       type: "academic"
     },
     {
+      place: "2nd",
+      competition: "Scientific Tetrathlon, Ostrava-Zábřeh",
+      year: "2019/2020",
+      type: "academic"
+    },
+    {
+      place: "2nd",
+      competition: "International Competition DUEL 2018, Category B",
+      year: "2018",
+      type: "international"
+    },
+    {
       place: "3rd",
       competition: "Krajské kolo Matematické olympiády, kategorie B",
       year: "2019",
@@ -22,21 +34,9 @@ export const AchievementsSection = () => {
       type: "academic"
     },
     {
-      place: "2nd",
-      competition: "Scientific Tetrathlon, Ostrava-Zábřeh",
-      year: "2019/2020",
-      type: "academic"
-    },
-    {
       place: "6th",
       competition: "Physics Brawl International, Senior Category",
       year: "2019/2020",
-      type: "international"
-    },
-    {
-      place: "2nd",
-      competition: "International Competition DUEL 2018, Category B",
-      year: "2018",
       type: "international"
     }
   ];
