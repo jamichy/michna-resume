@@ -87,7 +87,7 @@ export const ProfileSection = () => {
             <Briefcase className="w-5 h-5 text-slate-400" />
             <div>
               <p className="text-xs text-slate-500 uppercase tracking-wide">Current Role</p>
-              <p className="text-sm font-medium text-slate-900">Business Development Manager</p>
+              <p className="text-sm font-medium text-slate-900">Looking for New Opportunities</p>
             </div>
           </div>
           
