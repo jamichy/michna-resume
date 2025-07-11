@@ -1,9 +1,6 @@
-
 import { User, MapPin, Calendar, Briefcase, Search } from "lucide-react";
-
 export const ProfileSection = () => {
-  return (
-    <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 lg:p-8">
+  return <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 lg:p-8">
       <div className="space-y-6 lg:space-y-8">
         {/* Top Section: Image and Brief Info */}
         <div className="flex flex-col sm:flex-row lg:flex-row gap-6 lg:gap-8">
@@ -35,17 +32,7 @@ export const ProfileSection = () => {
               </div>
 
               {/* Currently Looking for Opportunities - Mobile Optimized */}
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-lg p-4">
-                <div className="flex items-start gap-3">
-                  <Search className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-green-800 text-sm sm:text-base">Currently Looking for New Opportunities</h3>
-                    <p className="text-green-700 text-xs sm:text-sm mt-1">
-                      Open to full-time positions in tech, data science, and business development roles.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             
             <div className="text-slate-700 text-sm sm:text-base space-y-3 sm:space-y-4">
@@ -95,6 +82,5 @@ export const ProfileSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
