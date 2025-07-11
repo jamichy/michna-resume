@@ -30,29 +30,29 @@ export const ContactInfo = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-20">
+    <section className="relative bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-12 sm:py-16 lg:py-20">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
       
-      <div className="relative max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-light mb-4 tracking-tight">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-4 tracking-tight">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Get In Touch</span>
           </h2>
-          <p className="text-xl text-blue-200 font-light">
+          <p className="text-lg sm:text-xl text-blue-200 font-light">
             Ready to connect and collaborate
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {contactItems.map((item, index) => {
             const Icon = item.icon;
             const content = (
-              <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <Icon className="w-8 h-8 text-white" />
+              <div className="text-center p-4 sm:p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                  <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <p className="text-sm text-blue-200 uppercase tracking-wide mb-2">{item.label}</p>
-                <p className="text-lg font-medium text-white">{item.value}</p>
+                <p className="text-xs sm:text-sm text-blue-200 uppercase tracking-wide mb-2">{item.label}</p>
+                <p className="text-sm sm:text-lg font-medium text-white break-words">{item.value}</p>
               </div>
             );
 

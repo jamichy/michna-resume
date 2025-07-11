@@ -14,10 +14,10 @@ const Index = () => {
       <HeroSection />
       
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="grid lg:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 sm:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Left Column - Main Content */}
-          <div className="lg:col-span-2 space-y-12">
+          <div className="lg:col-span-2 space-y-8 lg:space-y-12">
             <ProfileSection />
             <ExperienceSection />
             <EducationSection />
@@ -25,7 +25,7 @@ const Index = () => {
           </div>
 
           {/* Right Column - Sidebar */}
-          <div className="lg:col-span-1 space-y-8">
+          <div className="lg:col-span-1 space-y-6 lg:space-y-8">
             <SkillsSection />
           </div>
         </div>
