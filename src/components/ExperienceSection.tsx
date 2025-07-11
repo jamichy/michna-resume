@@ -4,6 +4,18 @@ import { Briefcase, Calendar, ArrowRight, ExternalLink } from "lucide-react";
 export const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Currently Looking for New Opportunities",
+      company: "Open to Offers",
+      companyUrl: "",
+      period: "Present",
+      description: "Seeking challenging positions in business development, data analytics, or technical leadership",
+      achievements: [
+        "Available for immediate start",
+        "Open to remote, hybrid, or on-site positions",
+        "Interested in international opportunities"
+      ]
+    },
+    {
       title: "Business Development Manager",
       company: "Textilkvalitne.cz",
       companyUrl: "https://www.textilkvalitne.cz",
@@ -24,17 +36,6 @@ export const ExperienceSection = () => {
       achievements: [
         "Managed and coordinated a team of data analysts",
         "Organized and streamlined data processing workflows"
-      ]
-    },
-    {
-      title: "Chief Technician",
-      company: "Student Festival Unplugged GMK",
-      companyUrl: "https://unplugged.gmk.cz",
-      period: "September 2018 – June 2020",
-      description: "Technical leadership for large-scale student events",
-      achievements: [
-        "Provided comprehensive technical support for festival operations",
-        "Coordinated logistics and technical infrastructure"
       ]
     },
     {
@@ -78,18 +79,28 @@ export const ExperienceSection = () => {
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-2 mb-2">
                   <h3 className="text-xl font-semibold text-slate-900">{exp.title}</h3>
-                  <ArrowRight className="w-4 h-4 text-slate-400" />
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg font-medium text-green-600">{exp.company}</span>
-                    <a
-                      href={exp.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-green-600 hover:text-green-700 transition-colors"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
+                  {exp.companyUrl && (
+                    <>
+                      <ArrowRight className="w-4 h-4 text-slate-400" />
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg font-medium text-green-600">{exp.company}</span>
+                        <a
+                          href={exp.companyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1 text-green-600 hover:text-green-700 transition-colors"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </div>
+                    </>
+                  )}
+                  {!exp.companyUrl && (
+                    <>
+                      <ArrowRight className="w-4 h-4 text-slate-400" />
+                      <span className="text-lg font-medium text-green-600">{exp.company}</span>
+                    </>
+                  )}
                 </div>
                 
                 <div className="flex items-center gap-2 mb-3">
