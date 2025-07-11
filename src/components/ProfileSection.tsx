@@ -1,5 +1,5 @@
 
-import { User, MapPin, Calendar, Briefcase } from "lucide-react";
+import { User, MapPin, Calendar, Briefcase, Search } from "lucide-react";
 
 export const ProfileSection = () => {
   return (
@@ -36,6 +36,20 @@ export const ProfileSection = () => {
                   <Calendar className="w-4 h-4 text-slate-400" />
                   <span>Born: June 7, 2001</span>
                 </p>
+              </div>
+
+              {/* Currently Looking for Opportunities */}
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <Search className="w-5 h-5 text-green-600" />
+                  <h3 className="text-lg font-semibold text-green-800">Currently Looking for New Opportunities</h3>
+                </div>
+                <p className="text-green-700 mb-3">Seeking challenging positions in business development, data analytics, or technical leadership</p>
+                <ul className="space-y-1 text-sm text-green-700">
+                  <li>• Available for immediate start</li>
+                  <li>• Open to remote, hybrid, or on-site positions</li>
+                  <li>• Interested in international opportunities</li>
+                </ul>
               </div>
             </div>
             

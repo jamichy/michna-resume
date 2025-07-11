@@ -1,23 +1,10 @@
-
 import { Briefcase, Calendar, ArrowRight, ExternalLink } from "lucide-react";
 
 export const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Currently Looking for New Opportunities",
-      company: "Open to Offers",
-      companyUrl: "",
-      period: "Present",
-      description: "Seeking challenging positions in business development, data analytics, or technical leadership",
-      achievements: [
-        "Available for immediate start",
-        "Open to remote, hybrid, or on-site positions",
-        "Interested in international opportunities"
-      ]
-    },
-    {
       title: "Business Development Manager",
-      company: "Textilkvalitne.cz",
+      company: "Textilkvalitne.cz", 
       companyUrl: "https://www.textilkvalitne.cz",
       period: "July 2022 – Present",
       description: "Leading international business expansion and process optimization",
