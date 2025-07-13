@@ -1,4 +1,3 @@
-
 import { GraduationCap, BookOpen, Award, ExternalLink } from "lucide-react";
 
 export const EducationSection = () => {
@@ -19,7 +18,7 @@ export const EducationSection = () => {
       school: "Czech Technical University in Prague",
       faculty: "Faculty of Nuclear Sciences and Physical Engineering",
       period: "2020–2023",
-      thesis: "Automatic stock exchange trading based on fundamental data and reinforcement learning algorithms",
+      thesis: "Automatic stock trading based on fundamental factors and reinforcement learning",
       supervisor: "Ing. Pavel Strachota, Ph.D.",
       thesisLink: "https://dspace.cvut.cz/handle/10467/111459"
     },
