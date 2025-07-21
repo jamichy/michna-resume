@@ -6,7 +6,7 @@ export const ExperienceSection = () => {
       title: "Business Development Manager",
       company: "Textilkvalitne.cz", 
       companyUrl: "https://www.textilkvalitne.cz",
-      period: "July 2022 – Present",
+      period: "July 2022 - July 2025",
       description: "Leading international business expansion and process optimization",
       achievements: [
         "Developed and maintained strategic international business relationships",
